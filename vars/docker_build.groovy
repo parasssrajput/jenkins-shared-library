@@ -1,4 +1,4 @@
-def call(String image_name){
+def call(String image_name, String tag){
     echo "Building docker image"
-    sh "docker build -t ${image_name} ."
+    sh "docker build -t ${image_name}:${tag} ."
 }
